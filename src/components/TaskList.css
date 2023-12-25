@@ -1,0 +1,70 @@
+/* Style for the container */
+.TaskList {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Style for the list */
+  .TaskList ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style for each list item */
+  .TaskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the text with completed tasks */
+  .TaskList li span {
+    flex-grow: 1;
+    text-decoration: none;
+  }
+
+/* Style for the Valider button */
+.TaskList button.valider {
+    padding: 8px;
+    margin-left: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #048d1b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .TaskList button.valider:hover {
+    background-color: #07cf29;
+  }
+  
+  /* Style for the Supprimer button */
+  .TaskList button.supprimer {
+    padding: 8px;
+    margin-left: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #e63748;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .TaskList button.supprimer:hover {
+    background-color: #6c131c;
+  }
+  
+  
+  /* Style for completed tasks */
+  .TaskList li.completed {
+    opacity: 0.7;
+  }
+  
